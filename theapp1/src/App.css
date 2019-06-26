@@ -1,33 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  text-align: left;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center
+}
+
+header {
+  background-color: #3da6eb;
+  min-height: 10vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #333333;
 }
 
-.App-link {
-  color: #61dafb;
+.Home {
+  text-decoration: none;
+  color: #333333;
+  margin: auto 2%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.indexMain{
+  background-color: #333333;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card {
+  background-color: #ffffff;
+  height: 70%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.Slide {
+  align-self: flex-end;
+  margin-right: 2%;
+}
+
+.Entity {
+  align-self: flex-start;
+  margin-left: 2%;
+  margin-bottom: 20%;
+}
+
+.MetaInfo {
+  align-self: flex-start;
+  margin-left: 2%;
+  margin-bottom: 5%;
+}
+
+.ButtonBar {
+  background-color: #333333;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ButtonBar button {
+  background-color: #333333;
+  color: #ffffff;
+  border: 0;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.BlueButtons {
+  display: flex;
+  flex-direction: row;
+}
+
+.BlueButtons button {
+  background-color: #3da6eb;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-left: 2%;
+  margin-right: 2%;
+  border: 0;
+  border-radius: 18px;
+  padding: 10px 30px;
 }
