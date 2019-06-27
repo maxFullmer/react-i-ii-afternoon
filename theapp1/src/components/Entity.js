@@ -3,7 +3,7 @@ import React from 'react';
 function Entity(props) {
     return (
       <div>
-        Who Dis?
+        {props.fullName[props.currentID - 1]}
       </div>
     );
   }

@@ -54,6 +54,8 @@ header {
 }
 
 .Entity {
+  text-decoration: underline;
+  text-decoration-color: #3da6eb;
   align-self: flex-start;
   margin-left: 2%;
   margin-bottom: 20%;

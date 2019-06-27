@@ -1,11 +1,12 @@
 import React from 'react';
 
 function Slide(props) {
-    return (
-      <div>
-        1/25
-      </div>
-    );
-  }
+    if (props.currentID)
+        return (
+            <div>
+                {props.currentID}/{props.totalID}
+            </div>
+        );
+}
 
 export default Slide;
