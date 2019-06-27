@@ -4,11 +4,11 @@ function MetaInfo(props) {
     return (
       <div>
         <ul>
-            <li>From: {props.from[props.currentID - 1]}</li>
-            <li>Job Title: {props.jobTitle[props.currentID - 1]}</li>
-            <li>Employer: {props.employer[props.currentID - 1]}</li>
+            <li><b>From: </b>{props.from[props.currentID - 1]}</li>
+            <li><b>Job Title: </b>{props.jobTitle[props.currentID - 1]}</li>
+            <li><b>Employer: </b>{props.employer[props.currentID - 1]}</li>
             <br></br>
-            <li>Favorite Movies:
+            <li><b>Favorite Movies:</b>
                 <ol>
                     <li>{props.favoriteMovies[props.currentID - 1][0]}</li>
                     <li>{props.favoriteMovies[props.currentID - 1][1]}</li>

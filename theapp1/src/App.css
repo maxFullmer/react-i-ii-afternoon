@@ -41,8 +41,8 @@ header {
 
 .Card {
   background-color: #ffffff;
-  height: 70%;
-  width: 80%;
+  height: 60vh;
+  width: 80vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -51,25 +51,37 @@ header {
 .Slide {
   align-self: flex-end;
   margin-right: 2%;
+  font-size: 2em;
+  font-weight: 900;
 }
 
 .Entity {
   text-decoration: underline;
   text-decoration-color: #3da6eb;
   align-self: flex-start;
-  margin-left: 2%;
-  margin-bottom: 20%;
+  margin-left: 2vw;
+  margin-bottom: 2vh;
+  font-size: 2em;
+  font-weight: 900;
 }
 
 .MetaInfo {
   align-self: flex-start;
-  margin-left: 2%;
-  margin-bottom: 5%;
+  margin-left: 2vw;
+  margin-bottom: 10vh;
+  font-size: 1.7em;
+}
+.MetaInfo ul {
+  list-style-type: none;
+}
+
+.MetaInfo ol {
+  padding-left: 5vw;
 }
 
 .ButtonBar {
   background-color: #333333;
-  height: 10%;
+  height: 10vh;
   width: 100%;
   display: flex;
   flex-direction: row;

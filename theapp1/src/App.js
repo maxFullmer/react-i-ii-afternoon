@@ -65,7 +65,7 @@ class App extends Component {
             </div>
 
             <div className="ButtonBar">
-              <button onClick={() => this.previous()}>Previous</button>
+              <button onClick={() => this.previous()}>{"<"} Previous</button>
 
               <div className="BlueButtons">
                 <button>Edit</button>
@@ -73,7 +73,7 @@ class App extends Component {
                 <button>New</button>
               </div>
 
-              <button onClick={() => this.next()}>Next</button>
+              <button onClick={() => this.next()}>Next {">"}</button>
             </div>
           </section>
         </main>
