@@ -3,6 +3,8 @@ import Entity from './components/Entity.js';
 import Slide from './components/Slide.js';
 import MetaInfo from './components/MetaInfo.js';
 import data from './data.js';
+import {remove} from "lodash";
+
 
 import './App.css';
 
@@ -37,6 +39,20 @@ class App extends Component {
     }
   }
 
+  terminate() {
+    if (this.state.currentID > 0) {
+      return this.setState({
+        totalID: this.state.totalID - 1,
+        fullName: this.state.fullName.splice(this.state.currentID-1,1),
+        from: this.state.from.splice(this.state.currentID-1,1),
+        employer: this.state.empolyer.splice(this.state.currentID-1,1),
+        jobTitle: this.state.jobTitle.splice(this.state.currentID-1,1),
+        favoriteMovies: remove(this.state.favoriteMovies, (element, index) => index === (this.state.currentID - 1))
+      })
+    }
+      
+  }
+
   render() {
     console.log(this.state)
 
@@ -69,7 +85,7 @@ class App extends Component {
 
               <div className="BlueButtons">
                 <button>Edit</button>
-                <button>Delete</button>
+                <button onClick={() => this.terminate()}>Delete</button>
                 <button>New</button>
               </div>
 
